@@ -17,6 +17,8 @@ function App() {
   const [imageUrl, setImageUrl] = useState('');
   const [loading, setLoading] = useState(false);
   const [style, setStyle] = useState('None');
+  const token = import.meta.env.VITE_HF_TOKEN;
+
 
   const [darkMode, setDarkMode] = useState(() => {
     return localStorage.getItem('theme') === 'dark';
@@ -40,7 +42,7 @@ function App() {
         { inputs: style !== 'None' ? `${style} style of ${prompt}` : prompt },
         {
           headers: {
-            Authorization: 'Bearer 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', // Replace with your token
+            Authorization: `Bearer ${token}`, 
           },
           responseType: 'blob', // important!
         }
