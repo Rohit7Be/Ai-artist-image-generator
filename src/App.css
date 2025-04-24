@@ -1,0 +1,269 @@
+/* Overall body styles */
+/* Updated body styling for vertical centering with margin */
+body {
+  font-family: 'Arial', sans-serif;
+  background: #252525;
+  color: #333;
+  margin: 0;
+  padding: 40px 0; /* Adds margin above and below */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+/* Main app container (card) */
+.app {
+  text-align: center;
+  padding: 2rem;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 500px;
+  margin: auto;
+}
+
+
+/* Heading styles */
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #494545;
+  margin-bottom: 1.5rem;
+}
+h5{
+  font-size: 1rem;
+}
+p{
+  margin-top: 2rem;
+  font-size: 12px;
+  color: #393838;
+  font-weight: bold;
+  
+}
+.logo {
+  width: 80px;
+  height: auto;
+  border-radius: 50%;
+}
+
+
+/* Input and dropdown styling */
+input,
+select {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 100%;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+  transition: border 0.3s ease;
+}
+
+input:focus,
+select:focus {
+  border: 1px solid #5c6bc0;
+  outline: none;
+}
+
+/* Button styling */
+button {
+  padding: 12px 20px;
+  font-size: 16px;
+  background: #5c6bc0;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  width: 100%;
+}
+
+button:disabled {
+  background: #b0bec5;
+  cursor: not-allowed;
+}
+
+button:hover {
+  background: #273aa1;
+}
+
+/* Image styling */
+img {
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 512px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+/* Download button styling */
+button.download {
+  background: #388e3c;
+  margin-top: 1rem;
+  width: auto;
+  padding: 10px 20px;
+  
+}
+
+button.download:hover {
+  background: #215c26;
+}
+
+/* Style selector */
+select {
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #5c6bc0;
+}
+
+/* Loader styling */
+.loading {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ff9800;
+}
+body.light {
+  background-color: #f5f5f5;
+  color: #111;
+}
+
+body.dark {
+  background-color: #121212;
+  color: #eee;
+}
+.light .modechange{
+  background-color: #4d4b4b;
+  color: white;
+}
+.dark .modechange{
+  background-color: #eee;
+  color: black;
+}
+
+.modechange {
+  padding: 5px;
+  width: 50px;
+  border: none;
+  background: #4f46e5;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.modechange:hover {
+  opacity: 0.9;
+}
+/* Default app container */
+.app {
+  text-align: center;
+  padding: 2rem;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 500px;
+  margin: auto;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Light mode */
+.light .app {
+  background: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  color: #222;
+}
+
+/* Dark mode */
+.dark .app {
+  background: #1e1e1e;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.05);
+  color: #eee;
+}
+
+/* Headings */
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.light h1 {
+  color: #494545;
+}
+
+.dark h1 {
+  color: #f0f0f0;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+p {
+  margin-top: 2rem;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.light p {
+  color: #393838;
+}
+
+.dark p {
+  color: #ccc;
+}
+
+.logo {
+  width: 80px;
+  height: auto;
+  border-radius: 50%;
+}
+
+/* Input and select styles */
+input,
+select {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  width: 100%;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+  background: transparent;
+}
+
+/* Light mode inputs */
+.light input,
+.light select {
+  border: 1px solid #ccc;
+  color: #111;
+}
+
+.light input:focus,
+.light select:focus {
+  border: 1px solid #5c6bc0;
+  outline: none;
+}
+
+/* Dark mode inputs */
+.dark input,
+.dark select {
+  border: 1px solid #555;
+  color: #eee;
+}
+
+.dark input:focus,
+.dark select:focus {
+  border: 1px solid #90caf9;
+  outline: none;
+  background: #2a2a2a;
+}
